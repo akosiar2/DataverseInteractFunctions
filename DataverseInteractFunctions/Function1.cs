@@ -25,9 +25,13 @@ namespace DataverseInteractFunctions
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
 
-
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+
+            if (string.IsNullOrEmpty(requestBody))
+                return new BadRequestObjectResult("Please provide a model in the request body");
+
             dynamic data = JsonConvert.DeserializeObject(requestBody);
+
             string[] dateRange = data?.required.ToObject<string[]>();
             DateTime startOn = Convert.ToDateTime(dateRange[0]);
             DateTime endOn = Convert.ToDateTime(dateRange[1]);
@@ -61,7 +65,7 @@ namespace DataverseInteractFunctions
                 }
             }
 
-            string responseMessage = $"Time Entries added: { string.Join(", ", return_id)}";
+            string responseMessage = $"Time Entries Interacted";
             
             return new OkObjectResult(responseMessage);
         }

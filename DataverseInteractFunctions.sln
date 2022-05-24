@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32428.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataverseInteractFunctions", "DataverseInteractFunctions\DataverseInteractFunctions.csproj", "{472CCBF9-6A44-4852-A077-324827BDD691}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataverseInteractFunctions", "DataverseInteractFunctions\DataverseInteractFunctions.csproj", "{472CCBF9-6A44-4852-A077-324827BDD691}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDataverseInteractFunctions", "TestDataverseInteractFunctions\TestDataverseInteractFunctions.csproj", "{6DA979DD-2CB4-4FF8-AE80-FB8D9C2A8FE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{472CCBF9-6A44-4852-A077-324827BDD691}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{472CCBF9-6A44-4852-A077-324827BDD691}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{472CCBF9-6A44-4852-A077-324827BDD691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DA979DD-2CB4-4FF8-AE80-FB8D9C2A8FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DA979DD-2CB4-4FF8-AE80-FB8D9C2A8FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DA979DD-2CB4-4FF8-AE80-FB8D9C2A8FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DA979DD-2CB4-4FF8-AE80-FB8D9C2A8FE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
