@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 using DataverseInteractFunctions;
-using DataverseInteractFunctions.dto;
+using DataverseInteractFunctions.Dto;
 using Microsoft.AspNetCore.Http.Internal;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging.Abstractions;

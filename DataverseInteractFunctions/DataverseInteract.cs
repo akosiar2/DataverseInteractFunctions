@@ -7,21 +7,17 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using Microsoft.Xrm.Sdk;
-using Microsoft.Xrm.Sdk.Query;
-using System.Linq;
-using System.Collections.Generic;
-using DataverseInteractFunctions.Dto;
 using DataverseInteractFunctions.Services;
+using DataverseInteractFunctions.Dto;
 
 namespace DataverseInteractFunctions
 {
     public static class DataverseInteract
     {
         
-        [FunctionName("PostData")]
+        [FunctionName("postdata")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req, // TimeEntry timeEntry,
+            [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req, //TimeEntry timeEntry,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
@@ -42,7 +38,7 @@ namespace DataverseInteractFunctions
             var ids = await DataverseService.PostTimeEntry(startOn, endOn);
 
             string responseMessage = $"Time Entries Interacted";
-            
+
             return new OkObjectResult(responseMessage);
         }
 

@@ -6,9 +6,10 @@ namespace DataverseInteractFunctions.Dto
 {
     public class TimeEntry
     {
+        public string schema {get;set;}
         public string type { get; set; }
         public Property properties { get; set; }
-        public List<string> required { get; set; }
+        public string[] required { get; set; }
     }
 
     public class Property
