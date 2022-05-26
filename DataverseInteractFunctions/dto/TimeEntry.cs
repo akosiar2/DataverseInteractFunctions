@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataverseInteractFunctions.dto
+namespace DataverseInteractFunctions.Dto
 {
     public class TimeEntry
     {

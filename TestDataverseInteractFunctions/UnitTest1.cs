@@ -50,7 +50,7 @@ namespace TestDataverseInteractFunctions
 
             var logger = NullLoggerFactory.Instance.CreateLogger("Null Logger");
 
-            var response = Function1.Run(request, logger);
+            var response = DataverseInteract.Run(request, logger);
             response.Wait();
 
             // Check that the response is an "OK" response
@@ -68,7 +68,7 @@ namespace TestDataverseInteractFunctions
             var request = new DefaultHttpRequest(new DefaultHttpContext());
             var logger = NullLoggerFactory.Instance.CreateLogger("Null Logger");
 
-            var response = Function1.Run(request, logger);
+            var response = DataverseInteract.Run(request, logger);
             response.Wait();
 
             // Check that the response is an "Bad" response
